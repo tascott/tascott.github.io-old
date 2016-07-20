@@ -1,32 +1,32 @@
-Jekyll Photo Grid Gallery
-=========
+Freelancer Jekyll theme
+=========================
 
-Jekyll theme based on [Blueprint: Google Grid Gallery](http://tympanus.net/codrops/?p=18699)
+Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/templates/freelancer/)
 
 ## How to use
-1. Place a large image in `/img/large/`
-2. Place a thumbnail version of the same image in `/img/thumb/`. _Remember to use the same file name_
-3. Construction a post to display the image. Use the follow as an example:
+ - Place a image in `/img/portfolio/`
+ - Replace `you@email.com` in `_includes/contact_static.html` with your email address. refer to [formspree](http://formspree.io/) for more information.
+ - Create posts to display your projects. Use the follow as an example:
 ```txt
 ---
 layout: default
-date:   2014-04-06 23:26:12
-photo: 1.png
-caption_header: Sample header
-caption: sample caption
+modal-id: 1
+date: 2014-07-18
+img: cabin.png
+alt: image-alt
+project-date: July 2014
+client: The Client
+category: Web Development
+description: The description of the project
+
 ---
 ```
-4. And finally, serve Jekyll source as you would normally.
 
-## [Demo](https://iamnii.github.io/GridGallery)
-
-View this jekyll theme in action [here](https://iamnii.github.io/GridGallery)
+## Demo
+View this jekyll theme in action [here](https://jeromelachaud.github.io/freelancer-theme)
 
 ## Screenshot
-![screenshot](https://raw.github.com/iamnii/GridGallery/master/jggg.png)
+![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
 
-Localhost deployment
 =========
-After [downloading](https://github.com/iamnii/GridGallery/archive/master.zip), use the normal process of serving a jekyll site. Navigate to the directory in terminal and type `jekyll build` followed by `jekyll serve`
-
-For more details, read [documentation](http://jekyllrb.com/)
+For more details, read the [documentation](http://jekyllrb.com/)
