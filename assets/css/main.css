@@ -56,7 +56,6 @@
 	position: relative;
 	bottom: 0;
 	transform: translateY(-50%);
-	border: 1px solid green;
 	background-color: white;
 }
 
@@ -231,6 +230,14 @@
 		margin: 15px auto;
 	}
 
+}
+
+.btn {
+	width: 100%;
+	height: 35px;
+	background-color: #fff;
+	color: #49bf9d;
+	font-size: 20px;
 }
 
 .modal_close { 
@@ -2392,7 +2399,7 @@ span:hover {font-size: 30px;}
 				}
 
 				ul.icons li .icon:before {
-					font-size: 1.5em;
+					font-size: 2.5em;
 				}
 
 		ul.actions {
