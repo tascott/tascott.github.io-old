@@ -233,7 +233,30 @@
 
 }
 
+.modal_close { 
+	position: absolute; 
+	top: 12px; 
+	right: 12px; 
+	display: block; 
+	width: 44px; 
+	height: 44px; 
+	background: url("https://leanmodal.finelysliced.com.au/img/modal_close.png"); 
+	z-index: 2;
+}
 
+.easy-modal {
+		width: 600px;
+		padding: 2em;
+		box-shadow: 1px 1px 3px rgba(0,0,0,0.35);
+		background-color: white;
+	}
+
+	.easy-modal-animated {
+			width: 600px;
+			padding: 2em;
+			box-shadow: 1px 1px 3px rgba(0,0,0,0.35);
+			background-color: white;
+		}
 
 
 #lean_overlay {

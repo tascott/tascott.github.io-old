@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/dist/css/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
 
 
 </head>
@@ -97,7 +99,7 @@
 			
 			<div class="portfolioHolder">
 
-				<div id="mymomentsbox" class="portBox">
+				<div id="mymomentsbox" class="portBox easy-Modal">
 					<div class="portlabelouter"><a class="portlabel" id="go" rel="leanModal" name="test" href="#MM"><span>myMoments</span></a></div>
 				</div>
 
@@ -106,15 +108,15 @@
 				</div>
 
 				<div id="ltlbox" class="portBox">
-					<div class="portlabelouter"><a class="portlabel" id="go" rel="leanModal" name="test" href="#LTL"><span>Litle To Large</span></a></div>
+					<div class="portlabelouter"><a class="portlabel" id="go" rel="leanModal" name="test" class="modal_close" href="#LTL"><span>Litle To Large</span></a></div>
 				</div>
 
 				<div id="rocksmashbox" class="portBox">
-					<div class="portlabelouter"><a class="portlabel" id="go" rel="leanModal" name="test" href="#RS"><span>Rock Smash</span></a></div>
+					<div class="portlabelouter"><a class="portlabel" id="go" rel="leanModal" name="test" class="modal_close" href="#RS"><span>Rock Smash</span></a></div>
 				</div>
 
 				<div id="ambeebox" class="portBox">
-					<div class="portlabelouter"><a class="portlabel" id="go" rel="leanModal" name="test" href="#AM"><span>AmbeeMe - Hackathon</span></a></div>
+					<div class="portlabelouter"><a class="portlabel" id="go" rel="leanModal" name="test" class="modal_close" href="#AM"><span>AmbeeMe - Hackathon</span></a></div>
 				</div>
 
 
@@ -203,6 +205,13 @@
 		</div>
 
 
+		<button class="easy-modal-open" href="#modal2">Open modal #2</button>
+		<div class="easy-modal" id="modal2">
+				<h3>This modal has no inner div</h3>
+				<img src="http://placehold.it/600x400" alt="">
+			</div>
+
+
 
 
 		<!-- Scripts -->
@@ -211,21 +220,30 @@
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script src="assets/js/jquery.leanModal.min.js"></script>
+		<script src="assets/js/jquery.easyModal.js"></script>
 		<script src="assets/dist/js/unslider-min.js"></script>
 
 
 		<script type="text/javascript">
-			$(document).ready(function() {
+			// $(document).ready(function() {
 				
-				$("a[rel*=leanModal]").leanModal();
+				// $("a[rel*=leanModal]").leanModal({closeButton: ".modal_close" });
 
+				$('.easy-modal').easyModal({
+							top: 200,
+							overlay: 0.2
+						});
 
-				$('.my-slider').unslider({nav: false 
+				$('.easy-modal-open').click(function(e) {
+					var target = $(this).attr('href');
+					$(target).trigger('openModal');
+					e.preventDefault();
 				});
+
+				$('.my-slider').unslider({nav: false});
 				
 				
-			});
+			// });
 		</script>
 
 	</body>
