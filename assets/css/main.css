@@ -51,6 +51,13 @@
 
 /* EDITS */
 
+.my-fa-twitter:before {
+  content: "\f099";
+}
+.my-fa-facebook:before {
+  content: "\f09a";
+}
+
 .portlabelouter {
 	width: 100%;
 	position: relative;
