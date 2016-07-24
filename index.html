@@ -99,8 +99,8 @@
 			
 			<div class="portfolioHolder">
 
-				<div id="mymomentsbox" class="portBox easy-Modal">
-					<div class="portlabelouter"><a class="portlabel" id="go" rel="leanModal" name="test" href="#MM"><span>myMoments</span></a></div>
+				<div id="mymomentsbox" class="portBox easy-modal-open>
+					<div class="portlabelouter"><button class="easy-modal-open" href="#modal2">Open MM Modal</button><a class="portlabel" id="go" rel="leanModal" name="test" href="#MM"><span>myMoments</span></a></div>
 				</div>
 
 				<div id="flashbox" class="portBox">
@@ -124,9 +124,15 @@
 
 		</section>
 
+		
+
+	<!-- 	<div class="easy-modal" id="modal2">
+				<h3>This modal has no inner div</h3>
+				<img src="http://placehold.it/600x400" alt="">
+			</div> -->
 
 
-		<div class="hide" id="MM">
+		<div class="easy-modal" id="modal2">
 			<div class="my-slider">
 				<ul>
 					<li><img class="slideimg" src="images/myMoments1.png">
@@ -143,6 +149,7 @@
 				</ul>
 			</div>
 		</div>
+
 
 		<div class="hide" id="LTL">
 			<div class="my-slider">
@@ -205,11 +212,6 @@
 		</div>
 
 
-		<button class="easy-modal-open" href="#modal2">Open modal #2</button>
-		<div class="easy-modal" id="modal2">
-				<h3>This modal has no inner div</h3>
-				<img src="http://placehold.it/600x400" alt="">
-			</div>
 
 
 
@@ -225,9 +227,8 @@
 
 
 		<script type="text/javascript">
-			// $(document).ready(function() {
-				
-				// $("a[rel*=leanModal]").leanModal({closeButton: ".modal_close" });
+			$(document).ready(function() {
+			
 
 				$('.easy-modal').easyModal({
 							top: 200,
@@ -243,7 +244,7 @@
 				$('.my-slider').unslider({nav: false});
 				
 				
-			// });
+			});
 		</script>
 
 	</body>
