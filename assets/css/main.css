@@ -51,6 +51,11 @@
 
 /* EDITS */
 
+.smalllogo {
+	height: 55px;
+	width: 55px;
+}
+
 .my-fa-twitter:before {
   content: "\f099";
 }
