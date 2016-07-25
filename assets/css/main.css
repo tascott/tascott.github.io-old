@@ -250,6 +250,11 @@
 	background-color: #fff;
 	color: #49bf9d;
 	font-size: 20px;
+	cursor:pointer;
+}
+
+.btn:hover {
+
 }
 
 .modal_close { 
