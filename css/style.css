@@ -20,7 +20,7 @@ body{
   height: 200px;
   margin: 20px;
   display: inline-block;
-
+  cursor:pointer;
 }
 
 .front, .back {
