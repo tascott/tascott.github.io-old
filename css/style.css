@@ -2,138 +2,14 @@ body{
   margin: 0px;
   margin-top: 0px;
   font-family: 'Montserrat', serif;
-  line-height: 1.6
-}
-
-#tab-1 {
-  padding: 40px;
-  text-align: center;
-}
-
-.innercard {
+  line-height: 1.6;
+  height: 100vh;
   display: table;
-  vertical-align: middle;
-}
-#top span {
-  color: blue;
-  text-decoration: underline;
-
-}
-
-.card {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  display: inline-block;
-  cursor:pointer;
-}
-
-.front, .back {
-  border: 2px gray solid;
-  padding: 10px;
-}
-.front {
-  background-color: #ccc;
-  text-align: center;
-  font-size: 20px;
-  padding-top: 50px;
-}
-.back {
-  background-color: lightblue;
-}
-
-.back li {
-  list-style: none;
-  text-align: center;
-  font-size: 17px;
-
-}
-
-.element {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#cardholder {
-  margin: 0 auto;
-  text-align: center;
-}
-
-
-#headshot {
-  height: 120px;
-  width: auto;
-  border-radius: 50%;
-  margin-top: 30px;
-}
-
-#top {
-  padding: 0px 50px 0px 50px;
-}
-
-#top h1 {
-  margin-bottom: 20px;
-}
-.container{
   width: 100%;
-  margin: 0 auto;
 }
 
-.smalllogo {
-  height: 40px;
-  width: auto;
-}
-
-#contactDiv {
+h1 {
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-  margin-top: 30px; 
 }
-
-#contactDiv ul {
-   margin-top: 8px; 
-}
-
-#contactDiv li {
-  display: inline-block;
-  margin: 0px 6px 6px 6px;
-}
-
-
-ul.tabs{
-  text-align: center;
-  margin: 0;
-  padding: 0px;
-  list-style: none;
-}
-ul.tabs li{
-  background: none;
-  color: #222;
-  display: inline-block;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-ul.tabs li.current{
-  background: #ededed;
-  color: #222;
-}
-
-.tab-content{
-  display: none;
-  background: #ededed;
-  padding: 15px;
-}
-
-.tab-content.current{
-  display: inherit;
-}
-
-.flip {
-  height: 40px;
-  width: auto;
-}
-
-
-
-
