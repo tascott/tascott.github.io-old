@@ -1,18 +1,16 @@
 body{
 	margin: 0px;
 	margin-top: 0px;
-	font-family: 'Montserrat', serif;
-	line-height: 1.6;
+	font-family: 'Arial', serif;
 	height: 100vh;
-	display: table;
 	width: 100%;
 }
-  /* 
+  
   h1 {
-	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-  } */
+	padding: 20px;
+  }
   
 .container {
 	display: flex;
@@ -34,4 +32,19 @@ body{
 
 .interested {
 	background: linear-gradient(to left,#EDF7D2, #C9C19F);
+}
+
+.topic {
+	margin: 10px;
+	height: 100px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 11px -2px grey;
+}
+
+.topic:hover {
+	box-shadow: 0px 0px 11px 2px grey;
+}
+
+h3 {
+	text-align: center;
 }
