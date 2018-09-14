@@ -1,0 +1,37 @@
+body{
+	margin: 0px;
+	margin-top: 0px;
+	font-family: 'Montserrat', serif;
+	line-height: 1.6;
+	height: 100vh;
+	display: table;
+	width: 100%;
+}
+  /* 
+  h1 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+  } */
+  
+.container {
+	display: flex;
+	height: 100%;
+}
+  
+.area {
+	flex: 1;
+	/* border: 2px solid black; */
+}
+
+.know {
+	background: linear-gradient(to left, #C9C19F, #EDF7B5);
+}
+
+.learning {
+	background: linear-gradient(to left, #C9C19F, #C9C19F);
+}
+
+.interested {
+	background: linear-gradient(to left,#EDF7D2, #C9C19F);
+}
