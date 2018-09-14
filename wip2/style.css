@@ -1,0 +1,50 @@
+body{
+	margin: 0px;
+	margin-top: 0px;
+	font-family: 'Arial', serif;
+	height: 100vh;
+	width: 100%;
+}
+  
+  h1 {
+	vertical-align: middle;
+	text-align: center;
+	padding: 20px;
+  }
+  
+.container {
+	display: flex;
+	height: 100%;
+}
+  
+.area {
+	flex: 1;
+	/* border: 2px solid black; */
+}
+
+.know {
+	background: linear-gradient(to left, #C9C19F, #EDF7B5);
+}
+
+.learning {
+	background: linear-gradient(to left, #C9C19F, #C9C19F);
+}
+
+.interested {
+	background: linear-gradient(to left,#EDF7D2, #C9C19F);
+}
+
+.topic {
+	margin: 10px;
+	height: 100px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 11px -2px grey;
+}
+
+.topic:hover {
+	box-shadow: 0px 0px 11px 2px grey;
+}
+
+h3 {
+	text-align: center;
+}
