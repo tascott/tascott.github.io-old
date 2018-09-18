@@ -1,4 +1,4 @@
-html {
+* {
 	padding: 0px;
 	margin: 0px;
 }
@@ -29,7 +29,7 @@ h1 {
 	flex: 1;
 	border: 1px solid;
 	margin: 20px;
-	height: 300px;
+	min-height: 300px;
 }
 
 .label {
@@ -46,4 +46,26 @@ h1 {
 .coming-soon {
 	background-color: #eee;
 	height: 100px;
+}
+
+.tech-knowledge-area {
+	border: 1px solid;
+	margin: 3px;
+	display: flex;
+	min-height: 90px;
+}
+
+.tech-item {
+	border: 2px dashed;
+	margin: 5px;
+	min-height: 15px;
+	flex: 1;
+}
+
+.tech-label {
+	position: relative;
+	left: -10px;
+	min-height: 65px;
+	width: 30px;
+	border: 2px solid goldenrod;
 }
