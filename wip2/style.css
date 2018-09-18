@@ -1,50 +1,49 @@
-body{
+html {
+	padding: 0px;
 	margin: 0px;
+}
+body {
+	margin: 0px;
+	padding: 0px;
 	margin-top: 0px;
 	font-family: 'Arial', serif;
 	height: 100vh;
+	box-sizing: border-box;
+	border: 3px solid darkslategrey;
 	width: 100%;
 }
   
-  h1 {
+h1 {
 	vertical-align: middle;
 	text-align: center;
 	padding: 20px;
-  }
-  
+}
+
 .container {
 	display: flex;
-	height: 100%;
+	flex-wrap: wrap;
 }
-  
-.area {
+
+.area, .coming-soon {
+	min-width: 300px;
 	flex: 1;
-	/* border: 2px solid black; */
+	border: 1px solid;
+	margin: 20px;
+	height: 300px;
 }
 
-.know {
-	background: linear-gradient(to left, #C9C19F, #EDF7B5);
+.label {
+	position: relative;
+	background-color: white;
+	border: 2px dotted navy;
+	left: -20px;
+	top: -20px;
+	height: 40px;
+	width: 40%;
+	min-width: 30px;
 }
 
-.learning {
-	background: linear-gradient(to left, #C9C19F, #C9C19F);
-}
-
-.interested {
-	background: linear-gradient(to left,#EDF7D2, #C9C19F);
-}
-
-.topic {
-	margin: 10px;
+.coming-soon {
+	background-color: #eee;
 	height: 100px;
-	border-radius: 4px;
-	box-shadow: 0px 0px 11px -2px grey;
-}
-
-.topic:hover {
-	box-shadow: 0px 0px 11px 2px grey;
-}
-
-h3 {
-	text-align: center;
 }
