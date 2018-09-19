@@ -1,0 +1,99 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 0px;
+	font-family: 'Roboto Slab', serif;
+	height: 100vh;
+	box-sizing: border-box;
+	border: 5px solid darkslategrey;
+}
+  
+h1 {
+	vertical-align: middle;
+	text-align: center;
+	padding: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.area {
+	min-width: 300px;
+	flex: 1;
+	box-shadow: 1px 1px 10px -4px #000;
+	margin: 25px;
+	min-height: 300px;
+	background-image: url('../img/binding-light.png');
+	border-radius: 5px;
+
+	&.coming-soon {
+		min-height: 100px;
+	}
+}
+
+.label {
+	position: relative;
+	background-color: #F7F7B2;
+	box-shadow: 1px 1px 10px -4px #000;
+	left: -20px;
+	text-align: center;
+	top: -20px;
+	height: 40px;
+	width: 40%;
+	min-width: 30px;
+	display: table;
+	p {
+		display: table-cell;
+		vertical-align: middle;
+		font-weight: bold;
+		font-family: 'Poppins', sans-serif;
+		text-align: left;
+		padding-left: 17px;
+	}
+}
+
+.coming-soon {
+	height: 100px;
+
+	.label {
+		margin: 0 auto;
+		text-align: center;
+		p {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+}
+
+.tech-knowledge-area {
+	margin: 3px;
+	display: flex;
+	min-height: 90px;
+
+	.tech-item {
+		border: 2px dashed;
+		margin: 5px;
+		min-height: 15px;
+		flex: 1;
+	}
+
+	.tech-label {
+		position: relative;
+		left: -10px;
+		min-height: 100px;
+		width: 30px;
+		border: 2px solid goldenrod;
+		p {
+			writing-mode: tb-rl;
+			transform: rotate(-180deg);
+		}
+	}
+}
